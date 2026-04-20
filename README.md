@@ -85,7 +85,7 @@ Cleans previous builds.
 Compiles source code.
 
 Skips unit tests for faster build.
-<img width="957" height="386" alt="image" src="https://github.com/user-attachments/assets/0685b34e-2db3-42c4-923d-b63be40993ac" />
+![mvn clean test](https://github.com/Rani-ghub/anudip-projects/blob/student-management-system/Docs/mvn-clean-test.png?raw=true)
 
 Step 2: Run the JavaFX application
 bash
@@ -93,22 +93,18 @@ mvn javafx:run
 Launches the JavaFX UI.
 
 Connects to the studentdb schema in MySQL.
+
 Allows interaction with students, courses, and enrollments.
+
 ### 1. Adding Students
-![Adding Students](https://raw.githubusercontent.com/Rani-ghub/anudip-projects/student-management-system/Docs/student-add.png)
+![Adding Students](https://raw.githubusercontent.com/Rani-ghub/anudip-projects/student-management-system/Docs/student-add.png?raw=true)
 
 ### 2. Adding Course
-![Adding Course](https://raw.githubusercontent.com/Rani-ghub/anudip-projects/student-management-system/Docs/cource-add.png)
+![Adding Course](https://raw.githubusercontent.com/Rani-ghub/anudip-projects/student-management-system/Docs/cource-add.png?raw=true)
 
 ### 3. Enrolling Course
-![Enrolling Course](https://raw.githubusercontent.com/Rani-ghub/anudip-projects/student-management-system/Docs/enroll-cource.png)
+![Enrolling Course](https://raw.githubusercontent.com/Rani-ghub/anudip-projects/student-management-system/Docs/enroll-cource.png?raw=true)
 
-
-<img width="959" height="305" alt="image" src="https://github.com/user-attachments/assets/68b8f18b-2fea-493d-87a8-3e07bddb2c9b" />
-
-<img width="959" height="298" alt="image" src="https://github.com/user-attachments/assets/3b05c0ee-812a-4daa-9583-1480493f89cb" />
-
-<img width="958" height="299" alt="image" src="https://github.com/user-attachments/assets/297441b2-1501-437d-90e1-7e598167448a" />
 
 📊 Example Queries (for manual DB testing)
 List all students with their enrolled courses
