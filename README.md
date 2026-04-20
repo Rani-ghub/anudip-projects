@@ -88,10 +88,6 @@ Skips unit tests for faster build.
 <img width="957" height="386" alt="image" src="https://github.com/user-attachments/assets/0685b34e-2db3-42c4-923d-b63be40993ac" />
 
 Step 2: Run the JavaFX application
-![Adding Students](https://github.com/Rani-ghub/anudip-projects/blob/student-management-system/docs/student-add.png?raw=true)
-![Adding Course](https://github.com/Rani-ghub/anudip-projects/blob/student-management-system/docs/cource-add.png?raw=true)
-![Enrolling Course](https://github.com/Rani-ghub/anudip-projects/blob/student-management-system/docs/enroll-cource.png?raw=true)
-
 bash
 mvn javafx:run
 Launches the JavaFX UI.
