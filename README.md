@@ -93,7 +93,6 @@ mvn javafx:run
 Launches the JavaFX UI.
 
 Connects to the studentdb schema in MySQL.
-https://github.com/Rani-ghub/anudip-projects/blob/student-management-system/Docs/student-add.png?raw=true
 Allows interaction with students, courses, and enrollments.
 <img width="959" height="305" alt="image" src="https://github.com/user-attachments/assets/68b8f18b-2fea-493d-87a8-3e07bddb2c9b" />
 
