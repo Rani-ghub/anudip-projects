@@ -99,7 +99,7 @@ Allows interaction with students, courses, and enrollments.
 
 1.Adding Students
 ![ER Diagram](Docs/student-add.png)
-https://github.com/Rani-ghub/anudip-projects/blob/student-management-system/Docs/student-add.png
+![Adding Students](https://github.com/Rani-ghub/anudip-projects/blob/student-management-system/Docs/student-add.png)
 2.Adding Cource
 ![ER Diagram](Docs/cource-add.png)
 
