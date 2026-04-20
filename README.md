@@ -94,6 +94,16 @@ Launches the JavaFX UI.
 
 Connects to the studentdb schema in MySQL.
 Allows interaction with students, courses, and enrollments.
+### 1. Adding Students
+![Adding Students](https://raw.githubusercontent.com/Rani-ghub/anudip-projects/student-management-system/docs/student-add.png)
+
+### 2. Adding Course
+![Adding Course](https://raw.githubusercontent.com/Rani-ghub/anudip-projects/student-management-system/docs/cource-add.png)
+
+### 3. Enrolling Course
+![Enrolling Course](https://raw.githubusercontent.com/Rani-ghub/anudip-projects/student-management-system/docs/enroll-cource.png)
+
+
 <img width="959" height="305" alt="image" src="https://github.com/user-attachments/assets/68b8f18b-2fea-493d-87a8-3e07bddb2c9b" />
 
 <img width="959" height="298" alt="image" src="https://github.com/user-attachments/assets/3b05c0ee-812a-4daa-9583-1480493f89cb" />
