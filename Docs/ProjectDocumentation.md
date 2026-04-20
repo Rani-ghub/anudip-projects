@@ -85,8 +85,7 @@ Cleans previous builds.
 Compiles source code.
 
 Skips unit tests for faster build.
-
-![ER Diagram](Docs/mvn-clean-test.png)
+![mvn clean test](https://github.com/Rani-ghub/anudip-projects/blob/student-management-system/Docs/mvn-clean-test.png?raw=true)
 
 Step 2: Run the JavaFX application
 bash
@@ -98,13 +97,13 @@ Connects to the studentdb schema in MySQL.
 Allows interaction with students, courses, and enrollments.
 
 ### 1. Adding Students
-![Adding Students](https://raw.githubusercontent.com/Rani-ghub/anudip-projects/student-management-system/Docs/student-add.png)
+![Adding Students](https://raw.githubusercontent.com/Rani-ghub/anudip-projects/student-management-system/Docs/student-add.png?raw=true)
 
 ### 2. Adding Course
-![Adding Course](https://raw.githubusercontent.com/Rani-ghub/anudip-projects/student-management-system/Docs/cource-add.png)
+![Adding Course](https://raw.githubusercontent.com/Rani-ghub/anudip-projects/student-management-system/Docs/cource-add.png?raw=true)
 
 ### 3. Enrolling Course
-![Enrolling Course](https://raw.githubusercontent.com/Rani-ghub/anudip-projects/student-management-system/Docs/enroll-cource.png)
+![Enrolling Course](https://raw.githubusercontent.com/Rani-ghub/anudip-projects/student-management-system/Docs/enroll-cource.png?raw=true)
 
 
 📊 Example Queries (for manual DB testing)
