@@ -97,14 +97,14 @@ Connects to the studentdb schema in MySQL.
 
 Allows interaction with students, courses, and enrollments.
 
-1.Adding Students
-<img width="1912" height="601" alt="image" src="https://github.com/user-attachments/assets/63a9ab4a-3edf-47ef-9266-8b9ab3c225e4" />
+### 1. Adding Students
+![Adding Students](https://raw.githubusercontent.com/Rani-ghub/anudip-projects/student-management-system/Docs/student-add.png)
 
-2.Adding Cource
-![ER Diagram](Docs/cource-add.png)
+### 2. Adding Course
+![Adding Course](https://raw.githubusercontent.com/Rani-ghub/anudip-projects/student-management-system/Docs/cource-add.png)
 
-3.Enrolling Cource
-![ER Diagram](Docs/enroll-cource.png)
+### 3. Enrolling Course
+![Enrolling Course](https://raw.githubusercontent.com/Rani-ghub/anudip-projects/student-management-system/Docs/enroll-cource.png)
 
 
 📊 Example Queries (for manual DB testing)
