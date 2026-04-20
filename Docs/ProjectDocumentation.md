@@ -86,6 +86,8 @@ Compiles source code.
 
 Skips unit tests for faster build.
 
+![ER Diagram](docs/mvn-clean-test.png)
+
 Step 2: Run the JavaFX application
 bash
 mvn javafx:run
@@ -94,6 +96,16 @@ Launches the JavaFX UI.
 Connects to the studentdb schema in MySQL.
 
 Allows interaction with students, courses, and enrollments.
+
+1.Adding Students
+![ER Diagram](docs/student-add.png)
+
+2.Adding Cource
+![ER Diagram](docs/cource-add.png)
+
+3.Enrolling Cource
+![ER Diagram](docs/enroll-cource.png)
+
 
 📊 Example Queries (for manual DB testing)
 List all students with their enrolled courses
