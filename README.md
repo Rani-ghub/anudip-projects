@@ -59,7 +59,7 @@ StudentManagementSystem/
 │               └── web.xml                   # Deployment descriptor
 ├── pom.xml                                   # Maven build configuration
 ├── README.md                                 # Project documentation (this file)
-
+---
 #📦 Purpose of Each Component
 Servlets (com.college.sms) → Handle HTTP requests and responses.
 
