@@ -233,6 +233,11 @@ Table lists all courses with search/filter.
 
 
 # 3. **Login** with credentials.  
+
+
+<img width="952" height="476" alt="loginnew jpeg" src="https://github.com/user-attachments/assets/13bc6b1d-cdd3-4b52-b4e3-dc05faa039c7" />
+
+
 # 4. Navigate to **Dashboard** (`main.jsp`).  
 # 5. Use tabs to **manage Students, Courses, and Enrollments** (Add, Search, Edit, Delete).  
 # 6. **Logout** when finished.
