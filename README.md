@@ -6,7 +6,6 @@ This project demonstrates user authentication, student/course/enrollment managem
 ---
 
 ## 📂 Project Hierarchy
-
 ```text
 StudentManagementSystem/
 ├── src/
@@ -59,8 +58,10 @@ StudentManagementSystem/
 │               └── web.xml                   # Deployment descriptor
 ├── pom.xml                                   # Maven build configuration
 ├── README.md                                 # Project documentation (this file)
+
+```
 ---
-# 📦 **Purpose of Each Component**
+### 📦 **Purpose of Each Component**
 Servlets (com.college.sms) → Handle HTTP requests and responses.
 
 Models (com.college.model) → Represent entities (Student, Course, Enrollment).
@@ -77,8 +78,8 @@ Images → Enhance UI with icons and backgrounds.
 
 WEB-INF → Deployment configuration.
 
-⚙️ Setup Instructions
-1. Database
+### ⚙️ Setup Instructions
+# 1. Database
 Create a MySQL database named studentdb and tables using schema.sql.
 
 sql
@@ -91,7 +92,7 @@ CREATE TABLE users (
     username VARCHAR(50) UNIQUE NOT NULL,
     password VARCHAR(100) NOT NULL
 );
-2. Configuration
+# 2. Configuration
 Edit src/main/resources/application.properties:
 
 properties
@@ -100,7 +101,7 @@ db.username=root
 db.password=yourpassword
 db.driver=com.mysql.cj.jdbc.Driver
 
-3. Dependencies
+# 3. Dependencies
 Ensure your pom.xml includes:
 
 mysql-connector-java
@@ -110,30 +111,30 @@ jetty-maven-plugin
 javax.servlet-api
 
 
-▶️ Running the Project (Step by Step)
-1.Clone the repository
+### ▶️ Running the Project (Step by Step)
+# 1.Clone the repository
 
 bash
 git clone https://github.com/yourusername/StudentManagementSystem.git
 cd StudentManagementSystem
 
-2.Configure database
+# 2.Configure database
 
 Update application.properties with your DB credentials.
 
 Run schema.sql to initialize tables.
 
-3.Build the project
+# 3.Build the project
 
 bash
 mvn clean install
 
-4.Run with Jetty
+# 4.Run with Jetty
 
 bash
 mvn jetty:run
 
-5.Access in browser
+# 5.Access in browser
 
 Login: http://localhost:9090/login.jsp 
 
@@ -142,8 +143,8 @@ Register: http://localhost:9090/register.jsp
 Dashboard: http://localhost:9090/main.jsp 
 
 
-🎨 UI Functionality (End‑to‑End Workflows)
-1. User Authentication
+### 🎨 UI Functionality (End‑to‑End Workflows)
+# 1. User Authentication
 Login (login.jsp)
 
 User enters username and password.
@@ -166,7 +167,7 @@ Ends session via LogoutServlet.
 
 Redirects back to login page.
 
-2. Student Management
+# 2. Student Management
 Add Student
 
 Form in Students tab (main.jsp) with fields: name, email.
@@ -191,7 +192,7 @@ Delete Student
 
 Delete button removes student record from DB.
 
-3. Course Management
+# 3. Course Management
 Add Course
 
 Form in Courses tab with fields: course name, description.
@@ -210,7 +211,7 @@ Delete Course
 
 Remove course record from DB.
 
-4. Enrollment Management
+# 4. Enrollment Management
 Enroll Student in Course
 
 Form in Enrollments tab: select student + select course.
@@ -224,3 +225,9 @@ Search Enrollments
 
 Table lists all courses with search/filter.
 
+## ✅ **User Journey**
+1. **Register** a new account.
+2. **Login** with credentials.  
+3. Navigate to **Dashboard** (`main.jsp`).  
+4. Use tabs to **manage Students, Courses, and Enrollments** (Add, Search, Edit, Delete).  
+5. **Logout** when finished.
