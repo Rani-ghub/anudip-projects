@@ -239,5 +239,27 @@ Table lists all courses with search/filter.
 
 
 # 4. Navigate to **Dashboard** (`main.jsp`).  
+
+<img width="959" height="475" alt="dashboard jpeg" src="https://github.com/user-attachments/assets/b69e94ae-038e-4a4d-a1fa-aa7eb5462e98" />
+
+
 # 5. Use tabs to **manage Students, Courses, and Enrollments** (Add, Search, Edit, Delete).  
+   # 1.Students
+
+   <img width="954" height="473" alt="image" src="https://github.com/user-attachments/assets/f87089f4-09e9-4167-a206-90b4f6ac3f30" />
+
+   # 2.Courses
+
+   <img width="959" height="476" alt="image" src="https://github.com/user-attachments/assets/1dd15ab8-970a-4b9b-9fbc-6ba284f1aac5" />
+
+  # 3.Enrollments
+
+  <img width="959" height="470" alt="image" src="https://github.com/user-attachments/assets/429ad121-f690-46ab-87a5-bd91e10251f3" />
+
+
 # 6. **Logout** when finished.
+
+
+<img width="953" height="92" alt="image" src="https://github.com/user-attachments/assets/e3c96d38-aeb8-4da7-9512-64fd9fdd6939" />
+
+
