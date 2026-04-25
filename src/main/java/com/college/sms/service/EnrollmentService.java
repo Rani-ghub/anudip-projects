@@ -16,7 +16,9 @@ public class EnrollmentService extends BaseRepository {
              PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setInt(1, e.getStudentId());
             ps.setInt(2, e.getCourseId());
-            ps.setDate(3, Date.valueOf(e.getEnrollmentDate()));
+            ps.setDate(3, Date.valueOf(
+                e.getEnrollmentDate() != null ? e.getEnrollmentDate() : LocalDate.now()
+            ));
             ps.executeUpdate();
         } catch (Exception ex) {
             throw new RuntimeException("Error adding enrollment", ex);

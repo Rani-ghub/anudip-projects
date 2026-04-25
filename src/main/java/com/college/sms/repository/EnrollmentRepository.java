@@ -22,7 +22,11 @@ public class EnrollmentRepository extends BaseRepository {
 
     public List<Enrollment> findAll() {
         List<Enrollment> enrollments = new ArrayList<>();
-        String sql = "SELECT id, student_id, course_id, enrollment_date FROM enrollments";
+        String sql = "SELECT e.id, e.student_id, e.course_id, e.enrollment_date, " +
+                     "s.name AS studentName, c.name AS courseName " +
+                     "FROM enrollments e " +
+                     "JOIN students s ON e.student_id = s.id " +
+                     "JOIN courses c ON e.course_id = c.id";
         try (Connection conn = getConnection();
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(sql)) {
@@ -32,6 +36,8 @@ public class EnrollmentRepository extends BaseRepository {
                 e.setStudentId(rs.getInt("student_id"));
                 e.setCourseId(rs.getInt("course_id"));
                 e.setEnrollmentDate(rs.getDate("enrollment_date").toLocalDate());
+                e.setStudentName(rs.getString("studentName"));
+                e.setCourseName(rs.getString("courseName"));
                 enrollments.add(e);
             }
         } catch (Exception e) {

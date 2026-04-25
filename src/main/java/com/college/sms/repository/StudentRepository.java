@@ -1,10 +1,9 @@
 package com.college.sms.repository;
 
+import com.college.sms.model.Student;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.college.sms.model.Student;
 
 public class StudentRepository extends BaseRepository {
     public void save(Student student) {
@@ -16,6 +15,30 @@ public class StudentRepository extends BaseRepository {
             pstmt.executeUpdate();
         } catch (Exception e) {
             throw new RuntimeException("Failed to save student", e);
+        }
+    }
+
+    public void update(Student student) {
+        String sql = "UPDATE students SET name=?, email=? WHERE id=?";
+        try (Connection conn = getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, student.getName());
+            pstmt.setString(2, student.getEmail());
+            pstmt.setInt(3, student.getId());
+            pstmt.executeUpdate();
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to update student", e);
+        }
+    }
+
+    public void deleteById(int id) {
+        String sql = "DELETE FROM students WHERE id=?";
+        try (Connection conn = getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setInt(1, id);
+            pstmt.executeUpdate();
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to delete student", e);
         }
     }
 

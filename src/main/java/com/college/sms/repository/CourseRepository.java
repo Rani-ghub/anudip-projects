@@ -12,10 +12,35 @@ public class CourseRepository extends BaseRepository {
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
             pstmt.setString(1, course.getName());
             pstmt.setString(2, course.getDescription());
-            pstmt.setInt(3, course.getCredits());
+            pstmt.setInt(3, course.getCredits() > 0 ? course.getCredits() : 0);
             pstmt.executeUpdate();
         } catch (Exception e) {
             throw new RuntimeException("Failed to save course", e);
+        }
+    }
+
+    public void update(Course course) {
+        String sql = "UPDATE courses SET name=?, description=?, credits=? WHERE id=?";
+        try (Connection conn = getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, course.getName());
+            pstmt.setString(2, course.getDescription());
+            pstmt.setInt(3, course.getCredits());
+            pstmt.setInt(4, course.getId());
+            pstmt.executeUpdate();
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to update course", e);
+        }
+    }
+
+    public void deleteById(int id) {
+        String sql = "DELETE FROM courses WHERE id=?";
+        try (Connection conn = getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setInt(1, id);
+            pstmt.executeUpdate();
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to delete course", e);
         }
     }
 
