@@ -226,8 +226,13 @@ Search Enrollments
 Table lists all courses with search/filter.
 
 ## ✅ **User Journey**
-1. **Register** a new account.
-2. **Login** with credentials.  
-3. Navigate to **Dashboard** (`main.jsp`).  
-4. Use tabs to **manage Students, Courses, and Enrollments** (Add, Search, Edit, Delete).  
-5. **Logout** when finished.
+# 1. **Register** a new account.
+
+   
+   <img width="952" height="478" alt="register jpeg" src="https://github.com/user-attachments/assets/ba629e0a-14a0-446c-ada3-b6a8a4604a67" />
+
+
+# 3. **Login** with credentials.  
+# 4. Navigate to **Dashboard** (`main.jsp`).  
+# 5. Use tabs to **manage Students, Courses, and Enrollments** (Add, Search, Edit, Delete).  
+# 6. **Logout** when finished.
