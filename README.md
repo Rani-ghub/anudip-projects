@@ -142,10 +142,85 @@ Register: http://localhost:9090/register.jsp
 Dashboard: http://localhost:9090/main.jsp 
 
 
-🎨 UI Features
-Login & Register Pages → Gradient backgrounds, icons, clear headers.
+🎨 UI Functionality (End‑to‑End Workflows)
+1. User Authentication
+Login (login.jsp)
 
-Dashboard (main.jsp) → Blinking background image with overlay for readability.
+User enters username and password.
 
-Bootstrap 5 → Responsive design and modern components.
+Credentials validated via LoginServlet → UserService.
+
+On success, redirected to main.jsp dashboard.
+
+Register (register.jsp)
+
+User enters new account details (username, email, password).
+
+Data stored in users table via RegisterServlet.
+
+Redirected to login page after successful registration.
+
+Logout
+
+Ends session via LogoutServlet.
+
+Redirects back to login page.
+
+2. Student Management
+Add Student
+
+Form in Students tab (main.jsp) with fields: name, email.
+
+Submitted to StudentServlet → StudentService → StudentRepository.
+
+New student record inserted into DB.
+
+Search Students
+
+Table lists all students.
+
+Search/filter functionality to quickly locate a student.
+
+Edit Student
+
+Select a student record → edit form.
+
+Updates persisted via StudentServlet.
+
+Delete Student
+
+Delete button removes student record from DB.
+
+3. Course Management
+Add Course
+
+Form in Courses tab with fields: course name, description.
+
+Submitted to CourseServlet → CourseService → CourseRepository.
+
+Search Courses
+
+Table lists all courses with search/filter.
+
+Edit Course
+
+Update course details via edit form.
+
+Delete Course
+
+Remove course record from DB.
+
+4. Enrollment Management
+Enroll Student in Course
+
+Form in Enrollments tab: select student + select course.
+
+Submitted to EnrollmentServlet → EnrollmentService → EnrollmentRepository.
+
+View Enrollments
+Table lists all student‑course enrollments.
+
+Search Enrollments
+
+Table lists all courses with search/filter.
 
