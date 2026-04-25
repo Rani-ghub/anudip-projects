@@ -60,7 +60,7 @@ StudentManagementSystem/
 ├── pom.xml                                   # Maven build configuration
 ├── README.md                                 # Project documentation (this file)
 ---
-#📦 **Purpose of Each Component**
+# 📦 **Purpose of Each Component**
 Servlets (com.college.sms) → Handle HTTP requests and responses.
 
 Models (com.college.model) → Represent entities (Student, Course, Enrollment).
