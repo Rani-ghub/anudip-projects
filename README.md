@@ -1,7 +1,6 @@
 # 🎓 Student Management System
 
-A Java Servlet + JSP + JDBC based Student Management System with MySQL backend.  
-This project demonstrates user authentication, student/course/enrollment management, and a styled dashboard with modern UI enhancements.
+The Student Management System is a full‑stack web application built using Java Servlets, JSP, JDBC, and MySQL. It provides a structured platform for managing students, courses, and enrollments with a secure authentication system and a modern, responsive user interface.
 
 ---
 
